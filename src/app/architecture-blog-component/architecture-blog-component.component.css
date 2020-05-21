@@ -1,0 +1,58 @@
+*,
+*:before,
+*:after {
+  box-sizng: border-box;
+}
+html {
+  font-family: "SF Text", "San Francisco", "Helvetica", sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+.header {
+  font-family: "SF Display", "San Francisco", "Helvetica", sans-serif;
+  background-color: #D3D3D3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(211, 207, 209, 0.5)), to(transparent));
+  background-image: linear-gradient(to bottom, rgba(224, 217, 222, 0.897), transparent);
+  padding: 2rem;
+  text-align: center;
+}
+.header h1 {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: normal;
+}
+.header p {
+  font-weight: 200;
+}
+.content {
+  min-height: 200px;
+  padding: 3rem 2rem 2rem 2rem;
+  margin: 0 auto;
+  max-width: 900px;
+}
+.content p:first-child:first-line {
+  line-height: 1;
+}
+.content p {
+    font-size: 15px;
+  }
+.content p:first-child:first-letter {
+  font-size: 42px;
+  font-weight: 300;
+  vertical-align: 0;
+}
+.canvas-wrap {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+canvas {
+  display: block;
+}

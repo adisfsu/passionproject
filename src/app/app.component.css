@@ -1,0 +1,170 @@
+.logo-nav {
+    height: 30px;
+    position: absolute;
+    margin: 6px -5px 0px 13px; 
+    color: #808080;
+}
+
+/* Text Centering Shortcut */
+.horizontal-center {
+    text-align: center;
+  }
+  .table {
+    display: table;
+  }
+  .table-row {
+    display: table-row;
+  }
+  .vertical-center {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+ #page-title .article-title, #page-title .article-subtitle {
+    text-shadow: 0px 0px 40px black;
+  }
+
+html { scroll-behavior: smooth; } 
+main {
+    padding: 10px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, 200%);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 3rem;
+    white-space: nowrap;
+  }
+
+  .centeredsmall {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 1.5rem;
+    font-style: italic;
+
+  }
+
+.responsive {
+    width: 100%;
+    height: auto;
+    background-image: url(../assets/images/adi_new.jpg);
+    background-attachment: fixed;
+    height: 700px;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  small {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  
+  .center {
+    text-align: center;
+  }
+  
+  section {
+    height: 100vh;
+  }
+  
+  /* NAVIGATION */
+  nav {
+    margin: 0 0px 0px 61px;
+    background: #808080;
+  }
+  nav ul {
+    list-style: none;
+    text-align: left;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #555;
+  }
+  
+  /* Circle */
+  nav.circle ul li a {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  nav.circle ul li a:after {
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '.';
+    color: transparent;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: transparent;
+  }
+  nav.circle ul li a:hover:after {
+    -webkit-animation: circle 1.5s ease-in forwards;
+  }
+  
+  /* Keyframes */
+  @-webkit-keyframes circle {
+    0% {
+      width: 1px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      height: 1px;
+      z-index: -1;
+      background: rgb(100, 98, 98);
+      border-radius: 100%;
+    }
+    100% {
+      background: #aaa;
+      height: 5000%;
+      width: 5000%;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border-radius: 0;
+    }
+  }
+
+  
+  
